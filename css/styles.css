@@ -1,0 +1,98 @@
+/*
+Colors used:
+Primary Color (Black): #0a0a0a;
+Secondary Color (Blue): #2033b0;
+*/
+
+body {
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: 0a0a0a;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+
+  img {
+    width: 100%;
+  }
+
+.myname {
+    font-size: 4em;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bluetext {
+    color: #2033b0;
+    font-weight: 500;
+    font-style: normal;
+}
+
+ul  {
+    list-style-type: none;
+    background-color: ffffff;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 15px 6px #ffffff;
+}
+
+li  {
+    float: left;
+    padding: 15px;
+}
+
+a {
+    color: #0a0a0a;
+    text-decoration: none; 
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+
+  span {
+    color: #0a0a0a;
+    display: block;
+    transition: 1s;
+  }
+
+a:before{
+    position: absolute;
+    content: attr(data-link-alt);
+    top: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+
+a:hover span {
+    transform: translateY(-100%);
+}
+
+a:hover:before {
+    top: 0;
+    opacity: 1;
+}
+
