@@ -44,6 +44,7 @@ h1, h2, h3, h4 {
     font-size: 4em;
     font-weight: 700;
     font-style: normal;
+    text-align: center;
 }
 
 .bluetext {
@@ -76,7 +77,7 @@ a {
   span {
     color: #0a0a0a;
     display: block;
-    transition: 1s;
+    transition: .5s;
   }
 
 a:before{
@@ -84,7 +85,7 @@ a:before{
     content: attr(data-link-alt);
     top: 100%;
     opacity: 0;
-    transition: 1s;
+    transition: .5s;
 }
 
 a:hover span {
@@ -96,3 +97,9 @@ a:hover:before {
     opacity: 1;
 }
 
+.primarybutton {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 16px 47px;
+    border-radius: 50px;
+}
