@@ -16,16 +16,16 @@
         <div>
             <img src="https://placehold.co/100x50" alt="Place holder">
             <nav>
-                <ul>
-                    <li><a href="index.html" data-link-alt="Work"><span>Work</span></a></li>
-                    <li><a href="about.html" data-link-alt="About"><span>About</span></a></li>
-                    <li><button class="primarybutton"> Lets connect</button></li>
+                <ul class="ulanimation">
+                    <li class="lianimation"><a href="index.html" data-link-alt="Work" class="linkani"><span class="rotate">Work</span></a></li>
+                    <li class="lianimation"><a href="#about" data-link-alt="About" class="linkani"><span class="rotate">About</span></a></li>
+                    <li class="lianimatinon"><a href="#contact" class="primarybutton"> Lets connect</a></li>
                 </ul>   
             </nav>
         </div>
     </header>
     <main>
-        <div> <!--Hero-->
+        <div class="hero"> <!--Hero-->
             <div>
                 <h1 class="myname"> Tristan Cox </h1>
                 <p>  
@@ -33,7 +33,7 @@
                 </p>
             </div>
         </div>
-        <div> <!--Work-->
+        <div class="work"> <!--Work-->
             <div> 
                 <div> <!--PocketChange-->
                     <div>
@@ -49,7 +49,7 @@
                             modern and easy to use personal finance app that helps you save money with ease. Open an account, input income and expenses, track spending, visual 
                             finances, and save money.
                         </p>
-                        <a href="pocketchange.html">View More</a>
+                        <a href="pocketchange.html" class="secondarybutton">View More</a>
                     </div>
                 </div>
                 <div> <!--Freeze-->
@@ -65,7 +65,7 @@
                             FREEZE provide users with a comprehensive and informative ski weather application that compiles weather data from multiple sources into one place for users who work and play in 
                             the ski and snowboarding industry. This includes real time weather updates, snow conditions, and interactive maps.
                         </p>
-                        <a href="#">View More</a>
+                        <a href="#" class="secondarybutton" >View More</a>
                     </div>
                 </div>
                 <div> <!--Dash & Dine-->
@@ -81,28 +81,68 @@
                             Dash & Dine is a web app with a large variety of recipes that can be found with ease and precision, which results in an overall less frustrating and more enjoyable experience. 
                             This web app will allow users to search and filter recipes, post their own recipes, and interact with other users.
                         </p>
-                        <a href="#">View More</a>
+                        <a href="#" class="secondarybutton">View More</a>
                     </div>
                 </div>
             </div>
         </div>  
+        <div id="about" class="about"> <!--About-->
+            <div>
+                <picture>
+                    <source srcset="img/me.jpg" media="(max-width:767px)">
+                    <img src="img/me.jpg" alt="Self Portrait">
+                  </picture>
+                  <div>
+                    <div>
+                        <h2>Designer, Developer, Creator</h2>
+                        <p>Hi, I’m <span class="bluetext">Tristan Cox</span>, a UI/UX designer based in Missoula, Montana. I have a passion for visual design and creating meaningful products that bring people together. I am data and research driven to produce clean and logical interfaces. 
+                        </p>
+                        <p>I furthered my design journey at the University of Vermont, graduating with a degree in art/design and computer science.
+                        </p>
+                        <p>When I’m not sitting in front of my screen, I love exploring nature year round, whether that’s hiking, skiing, or biking. I am always looking for my next adventure.</p>
+                        <a href="files/resume_tristan_cox.pdf" target="_blank" class="secondarybutton">My Resume</a>
+
+                    </div>
+                    <div>
+                        <h2>Skills & Tools</h2>
+                        <div>
+                            <div>
+                                <h3>Skills</h3>
+                                <ul>
+                                    <li>UI/UX</li>
+                                    <li>Frontend Development</li>
+                                    <li>Wireframing</li>
+                                    <li>User research</li>
+                                    <li>Prototyping</li>
+                                    <li>Visual Design</li>
+                                    <li>Branding</li>
+                                    <li>Organization</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Tools</h3>
+                                <ul>
+                                    <li>Figma</li>
+                                    <li>Adobe Photoshop & Illustrator</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
     </main>
-    <footer id="contact">
+    </main>
+    <footer id="contact" class="ccontact">
         <div>
             <h2>Get in touch with me!</h2>
-            <p>Paragraph TBA</p>
             <div>   
                 <a href="mailto:Tristan2000@gmail.com">Email</a>
                 <br>
                 <a href="tel:5082822827">Phone</a>
             </div>
             <div>
-                <a href="https://www.behance.net/tristancox2000" target="_blank">
-                    <img src="http://via.placeholder.com/32x32">
-                </a>
-            </div>
-            <div>
-                <a href="#top">Back to Top</a>
+                <a href="#top" class="secondarybutton">Back to Top</a>
             </div>
         <div>
             <p>Copyright Tristan Cox 2024</p>
