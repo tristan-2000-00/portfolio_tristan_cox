@@ -1,0 +1,159 @@
+/*
+Colors used:
+Primary Color (Black): #0a0a0a;
+Secondary Color (Blue): #2033b0;
+Tertiary Color (PocketChange Blue): #0074E8
+Super light (Accent grey): #d9d9d9
+*/
+
+:root {
+  --margin-size: 24px;
+  --pocket-change-blue: #0074e8;
+  --pocket-change-green: #1bd665;
+  --pocket-change-text-color: #0a0a0a;
+  --pocket-change-white: #fff;
+  --pocket-change-light-grey: #757575;
+  --pocket-change-accent-grey: #d9d9d9;
+
+}
+
+.top-thumbnail {
+  margin-top: 32px;
+}
+
+.pocket-change-logo {
+  display: flex;
+  align-items: center;
+  color: var(--pocket-change-text-color);
+  font-size: 32px;
+  width: 75px;
+  height: 75px;
+}
+
+.logo-blue {
+  color: var(--pocket-change-blue);
+}
+
+.section-finance-app {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.section-about {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.section-intro {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* .app-selling-points {
+  display: grid;
+  font-size: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 16px;
+  align-items: center;
+  border: 1px solid red;
+} */
+
+.section-overview h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.section-overview {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.question:not(:last-of-type) {
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--pocket-change-accent-grey);
+}
+
+.design-process {
+  margin-top: 32px;
+}
+
+.design-process ul {
+  font-size: 16px;
+}
+
+.competitor-analysis {
+  margin-top: 32px;
+}
+
+.branding {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.branding-logos {
+  display: grid;
+}
+
+.branding h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.light-grey-text {
+  color: var(--pocket-change-light-grey);
+}
+
+.user-flow {
+  margin-top: 32px;
+}
+
+.low-mid-wireframes {
+  margin-top: 32px;
+}
+
+.low-mid-wireframes .screens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 32px;
+  align-items: center;
+}
+
+.screens {
+  margin-top: 32px;
+}
+
+.low-mid-wireframes h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.user-prototype-tests {
+  margin-top: 32px;
+}
+
+.user-prototype-tests p {
+  margin-bottom: 32px;
+}
+
+.high-fidelity-wireframes {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.desktop-website {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.high-fidelity-wireframes .screens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 32px;
+  align-items: center;
+}
