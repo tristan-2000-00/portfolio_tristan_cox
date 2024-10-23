@@ -1,0 +1,156 @@
+/*
+Colors used:
+Primary Color (Black): #0a0a0a;
+Secondary Color (Blue): #2033b0;
+Tertiary Color (PocketChange Blue): #0074E8
+Super light (Accent grey): #d9d9d9
+*/
+
+:root {
+  --margin-size: 24px;
+  --dash-text-color: #0a0a0a;
+  --dash-white: #fff;
+  --dash-light-grey: #757575;
+  --dash-accent-grey: #d9d9d9;
+
+}
+
+.dash-intro-section {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  justify-content: center;
+  background-image: url("../img/dashdine/hero_2x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 210px;
+  padding-top: 16px;
+  border-radius: 10px;
+}
+
+.dash-intro-section .dash-logo {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  white-space: nowrap;
+  column-gap: 16px;
+  color: var(--dash-white);
+  font-size: 28px;
+}
+
+.dash-intro-section .dash-logo img {
+  width: 48px;
+  height: 48px;
+}
+
+.dash-intro-text p {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.primary-dash-header {
+  font-size: 32px;
+}
+
+.project-goal p {
+  margin-top: 16px;
+}
+
+.project-goal {
+  margin-top: 32px;
+}
+
+.project-goal img {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.user-personas img {
+  margin-bottom: 32px;
+  vertical-align: bottom;
+}
+
+.user-personas p {
+  margin-bottom: 32px;
+  margin-top: 16px;
+}
+
+.mvp-doc p {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.mvp-doc h5 {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.mvp-doc li {
+  font-size: 16px;
+  list-style-position: inside;
+}
+
+.user-flow {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.user-flow img {
+  margin-top: 16px;
+}
+
+.design-process {
+  margin-bottom: 32px;
+}
+
+.design-process h2 {
+  margin-bottom: 16px;
+}
+
+.low-screens {
+  margin-top: 32px;
+}
+
+.design-process .screens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 32px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.design-process .screens img {
+  vertical-align: bottom;
+}
+
+.prototype-testing p {
+  margin-top: 16px;
+  margin-bottom: 32px;
+
+}
+
+.prototype-testing {
+  margin-bottom: 32px;
+}
+
+/* .prototype-testing .problem-one {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 32px;
+  align-items: center;
+  justify-content: left;
+} */
+
+.style-guide {
+  margin-bottom: 32px;
+}
+
+.style-guide h2 {
+  margin-bottom: 16px;
+}
+
+.last-imgs img {
+  vertical-align: bottom;
+  margin-bottom: 32px;
+}
