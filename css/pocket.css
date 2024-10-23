@@ -49,15 +49,6 @@ Super light (Accent grey): #d9d9d9
   margin-bottom: 32px;
 }
 
-/* .app-selling-points {
-  display: grid;
-  font-size: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 16px;
-  align-items: center;
-  border: 1px solid red;
-} */
-
 .section-overview h3 {
   font-size: 20px;
   font-weight: 500;
@@ -81,6 +72,7 @@ Super light (Accent grey): #d9d9d9
 
 .design-process ul {
   font-size: 16px;
+  list-style-position: inside;
 }
 
 .competitor-analysis {
