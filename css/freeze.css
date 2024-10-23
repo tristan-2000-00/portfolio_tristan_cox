@@ -16,9 +16,7 @@ Super light (Accent grey): #d9d9d9
 }
 
 .section-freeze-app {
-    /* display: flex; */
     margin-top: 32px;
-    /* background-color: green; */
 }
 
 .top-thumbnail {
@@ -159,7 +157,6 @@ img {
 .low-fidelity-wireframes p {
     font-size: 12px;
     margin-top: 16px;
-    /* margin-bottom: 32px; */
 }
 
 .low-fidelity-wireframes img {
@@ -169,7 +166,6 @@ img {
 .prototype-testing p {
     font-size: 12px;
     margin-top: 16px;
-    /* margin-bottom: 32px; */
 }
 
 .prototype-testing img {
