@@ -14,12 +14,14 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/dashdine.css">
-  <title>FREEZE</title>
+  <title>Dash & Dine</title>
 </head>
 
 <body>
   <header id="header">
-    <span class="by-tristan-logo">ByTristan <sup>&#169;</sup></span>
+    <a href="index.html">
+      <span class="by-tristan-logo">ByTristan <sup>&#169;</sup></span>
+    </a>
     <nav>
       <ul>
         <li><a href="index.html#featured-work"><span class="rotate">Work</span></a></li>
@@ -39,7 +41,7 @@
     <section class="dash-intro-text"> <!-- add green text to selected words -->
       <p>Take your cooking to the next level with our all-in-one responsive recipe web app with a vast collection of
         recipes ranging from quick and easy weeknight dinners to gourmet dishes!</p>
-      <picture>
+      <picture class="collage">
         <source srcset="img/dashdine/group_imgs_1x.png" media="(max-width:175px)">
         <img src="img/dashdine/group_imgs_2x.png" alt="Group of Images">
       </picture>
@@ -68,10 +70,12 @@
         <source srcset="img/dashdine/mae_1x.png" media="(max-width:175px)">
         <img src="img/dashdine/mae_2x.png" alt="Mae User Persona">
       </picture>
-      <picture>
-        <source srcset="img/dashdine/four_size_screens_1x.png" media="(max-width:175px)">
-        <img src="img/dashdine/four_size_screens_2x.png" alt="Group of Images">
-      </picture>
+      <div class="four-screens">
+        <picture>
+          <source srcset="img/dashdine/four_size_screens_1x.png" media="(max-width:175px)">
+          <img src="img/dashdine/four_size_screens_2x.png" alt="Group of Images">
+        </picture>
+      </div>
     </section>
     <section class="mvp-doc">
       <h2 class="primary-dash-header">MVP Document</h2>
@@ -155,11 +159,13 @@
       <p>User 1 had trouble navigating the mobile screens for the web app</p>
       <p>User 2 had trouble using filtering system</p>
       <p>User 4 had trouble navigating backwards through the web app</p>
-      <h5>Key Insights</h5>
-      <p>The web app will need to add a bottom navigation bar to the mobile and tablet breakpoints</p>
-      <p>The web app should have a simpler filtering system </p>
-      <p>The web app should implement more back arrow sand easily identifiable navigational icons</p>
-      <picture>
+      <div class="key-insights">
+        <h5>Key Insights</h5>
+        <p>The web app will need to add a bottom navigation bar to the mobile and tablet breakpoints</p>
+        <p>The web app should have a simpler filtering system </p>
+        <p>The web app should implement more back arrow sand easily identifiable navigational icons</p>
+      </div>
+      <picture class="chef">
         <source srcset="img/dashdine/chef_mockup_1x.png" media="(max-width:175px)">
         <img src="img/dashdine/chef_mockup_2x.png" alt="High Fidelity Recipe Screen">
       </picture>
@@ -170,6 +176,9 @@
         <source srcset="img/dashdine/colors_1x.png" media="(max-width:175px)">
         <img src="img/dashdine/colors_2x.png" alt="High Fidelity Recipe Screen">
       </picture>
+      <div>
+        <img src="img/dashdine/typography.svg" alt="Typography">
+      </div>
     </section>
     <section class="last-imgs">
       <picture>
@@ -193,8 +202,10 @@
       </section>
       <a href="#header" class="tertiary">&#8593;</a>
     </div>
-    <p>© 2024 Tristan Cox </p>
-    <p>All rights reserved.</p>
+    <div class="copyright">
+      <p>© 2024 Tristan Cox </p>
+      <p>All rights reserved.</p>
+    </div>
   </footer>
 </body>
 

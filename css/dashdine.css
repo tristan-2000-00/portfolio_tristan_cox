@@ -24,7 +24,7 @@ Super light (Accent grey): #d9d9d9
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 210px;
+  height: 256px;
   padding-top: 16px;
   border-radius: 10px;
 }
@@ -64,6 +64,7 @@ Super light (Accent grey): #d9d9d9
 .project-goal img {
   margin-top: 32px;
   margin-bottom: 32px;
+  border-radius: 10px;
 }
 
 .user-personas img {
@@ -74,6 +75,10 @@ Super light (Accent grey): #d9d9d9
 .user-personas p {
   margin-bottom: 32px;
   margin-top: 16px;
+}
+
+.user-personas .four-screens img {
+  border-radius: 10px;
 }
 
 .mvp-doc p {
@@ -134,13 +139,9 @@ Super light (Accent grey): #d9d9d9
   margin-bottom: 32px;
 }
 
-/* .prototype-testing .problem-one {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 32px;
-  align-items: center;
-  justify-content: left;
-} */
+.chef img {
+  border-radius: 10px;
+}
 
 .style-guide {
   margin-bottom: 32px;
@@ -153,4 +154,184 @@ Super light (Accent grey): #d9d9d9
 .last-imgs img {
   vertical-align: bottom;
   margin-bottom: 32px;
+}
+
+.last-imgs img {
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 448px) {
+  .dash-intro-section {
+    margin-bottom: 64px;
+    height: 320px;
+    padding-top: 16px;
+  }
+
+  .dash-intro-text p {
+    margin-bottom: 64px;
+    font-weight: 400;
+  }
+
+  .project-goal {
+    margin-top: 64px;
+  }
+
+  .prototype-testing .key-insights {
+    margin-top: 64px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .design-process .screens {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    align-items: start;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .dash-intro-section {
+    margin-bottom: 64px;
+    height: 448px;
+    padding-top: 16px;
+  }
+
+  .dash-intro-section {
+    margin-bottom: 64px;
+    height: 640px;
+    padding-top: 64px;
+  }
+
+  .dash-intro-section .dash-logo {
+    font-size: 40px;
+  }
+
+  .dash-intro-text .collage img {
+    margin-top: 64px;
+  }
+
+  .dash-intro-text p {
+    margin-left: 32px;
+    margin-right: 32px;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .project-goal {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+
+  main {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .dash-intro-section {
+    margin-bottom: 64px;
+    height: 832px;
+    padding-top: 32px;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  .dash-intro-section .dash-logo {
+    column-gap: 32px;
+    font-size: 64px;
+  }
+
+  .dash-intro-section .dash-logo img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .dash-intro-text p {
+    margin-left: 64px;
+    margin-right: 64px;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .dash-intro-text .collage img {
+    margin-top: 64px;
+  }
+
+  .dash-intro-text {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  .project-goal {
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 64px;
+  }
+
+  .user-personas {
+    margin-top: 64px;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  .mvp-doc {
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 64px;
+  }
+
+  .user-flow {
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 64px;
+  }
+
+  .design-process {
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 64px;
+  }
+
+  .design-process .screens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 32px;
+    align-items: start;
+    margin-bottom: 32px;
+  }
+
+  .prototype-testing {
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-top: 64px;
+  }
+
+  .chef img {
+    border-radius: 10px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  .style-guide {
+    margin-bottom: 64px;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  .last-imgs {
+    margin-left: 64px;
+    margin-right: 64px;
+    margin-bottom: 32px;
+  }
 }
