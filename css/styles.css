@@ -44,7 +44,7 @@ h1 {
 
 h2 {
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3 {
@@ -164,14 +164,15 @@ a.secondary-button {
 .featured-work .project-thumbnails {
   display: grid;
   grid-template-columns: repeat(minmax(200px, 1fr));
-  /* auto-fits, */
   grid-gap: 64px;
   align-items: center;
 }
 
 .featured-work .project-thumbnails img {
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* object-fit: cover; */
 }
 
 .explore-link {
@@ -284,8 +285,6 @@ a.tertiary {
   header {
     display: flex;
     align-items: center;
-    margin-left: 32px;
-    margin-right: 32px;
   }
 
   .hero .my-name {
@@ -375,8 +374,6 @@ a.tertiary {
   header {
     display: flex;
     align-items: center;
-    margin-left: 64px;
-    margin-right: 64px;
   }
 
   .hero {
@@ -384,8 +381,35 @@ a.tertiary {
     /* background-image: url("https://i.gifer.com/IxSX.gif"); */
   }
 
+  .container {
+    display: inline-block;
+  }
+
   .hero .my-name {
     font-size: 128px;
+    border-right: 5px solid;
+    border-color: blue;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s, cursor 0.9s step-end infinite;
+    /* steps(11) this is the char count for h2 but animation wont follow it */
+  }
+
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
   }
 
   .hero p {
