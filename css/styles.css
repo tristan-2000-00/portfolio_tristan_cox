@@ -68,8 +68,6 @@ img {
 }
 
 header {
-  /* display: flex;
-  align-items: center; */
   text-align: center;
   justify-content: space-between;
   margin-left: var(--margin-size);
@@ -206,6 +204,10 @@ a.secondary-button {
   margin-bottom: 16px;
 }
 
+.about p {
+  margin-bottom: 16px;
+}
+
 .resource-links {
   margin-top: 32px;
   display: flex;
@@ -245,6 +247,15 @@ footer {
   color: var(--light-text-color);
 }
 
+footer .footer-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .copyright {
+  margin-top: 32px;
+}
+
 .footer-links>* {
   font-size: 16px;
 }
@@ -277,13 +288,24 @@ a.tertiary {
     margin-right: 32px;
   }
 
+  .hero .my-name {
+    font-size: 64px;
+  }
+
+  .hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 128px;
+  }
+
   nav ul {
     margin-top: 0;
     column-gap: 16px;
   }
 
-  body {
-    background-color: red;
+  main {
+    /* background-color: red; */
     margin-left: 32px;
     margin-right: 32px;
     margin-top: 16px;
@@ -293,6 +315,46 @@ a.tertiary {
     grid-template-columns: repeat(minmax(430px, 1fr));
     max-width: calc(500px * 1);
     margin: 0 auto;
+  }
+
+  .section-header {
+    font-size: 24px;
+  }
+
+  .about {
+    margin-top: 128px;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .about h3 {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  .about p {
+    font-size: 16px;
+    max-width: 1900px;
+  }
+
+  .resource-links {
+    margin-top: 64px;
+  }
+
+  .contact h3 {
+    font-size: 32px;
+  }
+
+  .contact p:last-of-type {
+    margin-top: 64px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    text-align: center;
   }
 }
 
@@ -319,6 +381,7 @@ a.tertiary {
 
   .hero {
     margin-top: 128px;
+    /* background-image: url("https://i.gifer.com/IxSX.gif"); */
   }
 
   .hero .my-name {
@@ -413,6 +476,7 @@ a.tertiary {
     justify-content: space-between;
     margin-left: 64px;
     margin-right: 64px;
+    padding-bottom: 32px;
   }
 
   footer .copyright {
@@ -430,13 +494,3 @@ a.tertiary {
     margin-top: 32px;
   }
 }
-
-
-
-
-
-/* @media only screen and (min-width: 1200px) {
-  .eatured-work .project-thumbnails {
-    fgrid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-} */

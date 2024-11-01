@@ -21,6 +21,10 @@ Super light (Accent grey): #d9d9d9
   margin-top: 32px;
 }
 
+.top-thumbnail img {
+  border-radius: 10px;
+}
+
 .pocket-change-logo {
   display: flex;
   align-items: center;
@@ -148,4 +152,25 @@ Super light (Accent grey): #d9d9d9
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 32px;
   align-items: center;
+}
+
+@media only screen and (min-width: 536px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  body {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
 }

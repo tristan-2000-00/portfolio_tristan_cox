@@ -17,6 +17,7 @@ Super light (Accent grey): #d9d9d9
 
 .section-freeze-app {
     margin-top: 32px;
+    margin-bottom: 64px;
 }
 
 .top-thumbnail {
@@ -26,6 +27,27 @@ Super light (Accent grey): #d9d9d9
 .section-freeze-app .project-details li {
     font-size: 12px;
     list-style: none;
+}
+
+.section-freeze-app .intro-app-logo img {
+    display: flex;
+    align-items: center;
+    max-width: 320px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.section-freeze-app p {
+    font-weight: 300;
+    max-width: 850px;
+}
+
+.section-freeze-app p:last-of-type {
+    font-weight: 500;
+}
+
+.section-freeze-app .primary-section-header {
+    margin-bottom: 16px;
 }
 
 .section-freeze-app .project-details li span {
@@ -59,6 +81,11 @@ Super light (Accent grey): #d9d9d9
 img {
     vertical-align: bottom;
     border-radius: 10px;
+}
+
+.native .secondary-header {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .question:not(:last-of-type) {
@@ -129,9 +156,15 @@ img {
 
 .mountain-screens .mountain-screen-mockup {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 32px;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    gap: 32px;
     align-items: center;
+}
+
+.mountain-screens .double-img {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
 }
 
 .mountain-screens .app-functions li {
@@ -188,4 +221,555 @@ img {
 
 .dark-mode {
     margin-bottom: 32px;
+}
+
+.horizontal-line {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border: none;
+    height: 2px;
+    background: #d9d9d9;
+}
+
+.topo .secondary-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media only screen and (min-width: 512px) {
+    .section-freeze-app .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    .native {
+        margin-top: 64px;
+        margin-bottom: 64PX;
+    }
+
+    .section-overview .precipitation-screens {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .design-process {
+        margin-bottom: 64px;
+    }
+
+    .section-freeze-app .title h2 {
+        margin-top: 0;
+        font-size: 40px;
+    }
+
+    .mountain-screen-mockup {
+        margin-top: 32px;
+    }
+
+    .mountain-screens .mountain-screen-mockup {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-gap: 32px;
+        align-items: start;
+    }
+
+    .mountain-screens .app-functions li {
+        font-size: 16px;
+        list-style: none;
+        font-weight: 500;
+    }
+
+    .mountain-screens .app-functions li span {
+        font-size: 16px;
+        list-style: none;
+        font-weight: 500;
+    }
+
+    .mountain-screens .double-img {
+        border-radius: 10px;
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    .mountain-screens .list-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mountain-screens .list-side .app-functions li {
+        font-weight: 300;
+    }
+
+    .user-flows {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .low-fidelity-wireframes {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .prototype-testing .search {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .topo .secondary-header {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 32px;
+    }
+
+    .typography-colors {
+        margin-bottom: 64px;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    body {
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+
+    main {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    .top-thumbnail {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .section-freeze-app {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .section-freeze-app .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    .section-freeze-app .title h2 {
+        margin-top: 0;
+        font-size: 40px;
+    }
+
+    .section-freeze-app p {
+        margin-top: 16px;
+        font-weight: 300;
+        max-width: 850px;
+    }
+
+    .section-freeze-app p:last-of-type {
+        font-weight: 500;
+    }
+
+    .section-freeze-app .intro-app-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5%;
+        margin-top: 0;
+    }
+
+    .section-freeze-app .intro-app-logo img {
+        max-width: 260px;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .horizontal-line {
+        margin-bottom: 80px;
+        margin-top: 80px;
+        border: none;
+        height: 2px;
+        background: #d9d9d9;
+    }
+
+    .native {
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+
+    .precipitation-screens {
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+
+    .design-process {
+        margin-bottom: 96px;
+    }
+
+    .section-overview {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .locator {
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 96px;
+    }
+
+    .locator h5 {
+        max-width: 600px;
+        margin-left: auto;
+    }
+
+    .mountain-screens {
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 96px;
+    }
+
+    .user-flows {
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 96px;
+    }
+
+    .create-account {
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+
+    .low-fidelity-wireframes {
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+
+    .prototype-testing .search {
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+
+    .low-fidelity-wireframes .low-fid-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 32px;
+        gap: 16px;
+    }
+
+    .low-fidelity-wireframes .low-fid-header p {
+        max-width: 350px;
+        margin-top: 0;
+    }
+
+    .low-fidelity-wireframes .low-fid-header h2 {
+        margin-top: 0;
+    }
+
+    .prototype-testing {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .prototype-testing .test-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 32px;
+        gap: 32px;
+    }
+
+    .prototype-testing .test-header h2 {
+        margin-top: 0;
+    }
+
+    .prototype-testing .test-header p {
+        margin-top: 0;
+    }
+
+    .typography-colors {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .typography-colors .color-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 32px;
+        gap: 16px;
+    }
+
+    .typography-colors .color-header h2 {
+        margin-top: 0;
+    }
+
+    .typography-colors .color-header p {
+        margin-top: 0;
+        max-width: 400px;
+    }
+
+    .topo .secondary-header {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 64px;
+    }
+
+    .typography-colors .dark-mode-colors {
+        margin-top: 64px;
+    }
+
+    .dark-mode {
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-top: 96px;
+    }
+
+    .dark-mode .dark-mode-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dark-mode .dark-mode-header h2 {
+        margin-top: 0;
+    }
+
+    .dark-mode .dark-mode-header p {
+        margin-top: 0;
+        max-width: 400px;
+    }
+}
+
+
+
+@media only screen and (min-width: 992px) {
+    main {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+
+    body {
+        background-color: white;
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+
+    .top-thumbnail {
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    .section-freeze-app {
+        margin-left: 64px;
+        margin-right: 64px;
+        margin-bottom: 128px;
+    }
+
+    .section-freeze-app .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 64px;
+    }
+
+    .section-freeze-app .title h2 {
+        margin-top: 0;
+        font-size: 64px;
+    }
+
+    .section-freeze-app p {
+        margin-top: 24px;
+        font-weight: 300;
+        max-width: 850px;
+    }
+
+    .section-freeze-app p:last-of-type {
+        font-weight: 500;
+    }
+
+    .section-freeze-app .intro-app-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15%;
+        margin-top: 0;
+    }
+
+    .section-freeze-app .intro-app-logo img {
+        max-width: 260px;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .horizontal-line {
+        margin-bottom: 80px;
+        margin-top: 80px;
+        border: none;
+        height: 2px;
+        background: #d9d9d9;
+    }
+
+    .native {
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    .native .secondary-header {
+        margin-top: 0;
+    }
+
+    .section-overview {
+        margin-left: 64px;
+        margin-right: 64px;
+        margin-top: 128px;
+    }
+
+    .precipitation-screens {
+        margin-top: 128px;
+        margin-bottom: 128px;
+    }
+
+    .locator {
+        margin-left: 64px;
+        margin-right: 64px;
+        margin-bottom: 128px;
+        margin-top: 128px;
+    }
+
+    .locator h5 {
+        max-width: 600px;
+        margin-left: auto;
+    }
+
+    .mountain-screens {
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    .user-flows {
+        margin-top: 128px;
+        margin-left: 64px;
+        margin-right: 64px;
+        margin-bottom: 128px;
+    }
+
+    .create-account {
+        margin-right: 64px;
+        margin-left: 64px;
+    }
+
+    .low-fidelity-wireframes {
+        margin-left: 64px;
+        margin-right: 64px;
+        margin-top: 128px;
+        margin-bottom: 128px;
+    }
+
+    .low-fidelity-wireframes .low-fid-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+
+    .low-fidelity-wireframes .low-fid-header p {
+        max-width: 400px;
+        margin-top: 0;
+    }
+
+    .low-fidelity-wireframes .low-fid-header h2 {
+        margin-top: 0;
+    }
+
+    .prototype-testing {
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    .prototype-testing .search {
+        margin-top: 64px;
+    }
+
+    .prototype-testing .test-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 32px;
+    }
+
+    .prototype-testing .test-header h2 {
+        margin-top: 0;
+    }
+
+    .prototype-testing .test-header p {
+        margin-top: 0;
+    }
+
+    .typography-colors {
+        margin-left: 64px;
+        margin-right: 64px;
+        margin-top: 128px;
+        margin-bottom: 128px;
+    }
+
+    .typography-colors .color-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    .typography-colors .color-header h2 {
+        margin-top: 0;
+    }
+
+    .typography-colors .color-header p {
+        margin-top: 0;
+        max-width: 400px;
+    }
+
+    .typography-colors .typogaphy {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .topo .secondary-header {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 64px;
+    }
+
+    .typography-colors .dark-mode-colors {
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .dark-mode {
+        margin-left: 64px;
+        margin-right: 64px;
+        margin-top: 64px;
+    }
+
+    .dark-mode .dark-mode-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dark-mode .dark-mode-header h2 {
+        margin-top: 0;
+    }
+
+    .dark-mode .dark-mode-header p {
+        margin-top: 0;
+        max-width: 400px;
+    }
 }
