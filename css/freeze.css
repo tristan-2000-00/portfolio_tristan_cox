@@ -167,6 +167,11 @@ img {
     flex-direction: column;
 }
 
+
+.mountain-screens .app-functions {
+    margin-top: 30%;
+}
+
 .mountain-screens .app-functions li {
     font-size: 16px;
     list-style: none;
