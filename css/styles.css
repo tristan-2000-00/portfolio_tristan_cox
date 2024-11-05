@@ -64,14 +64,13 @@ p {
 
 img {
   width: 100%;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 header {
   text-align: center;
   justify-content: space-between;
-  margin-left: 64px;
-  margin-right: 64px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 main {
@@ -89,6 +88,14 @@ a:visited,
 a:active,
 a:focus {
   color: var(--main-text-color);
+}
+
+nav {
+  display: flex;
+}
+
+.lets-connect {
+  margin-left: 32px;
 }
 
 nav ul {
@@ -109,6 +116,40 @@ nav ul .text-nav {
 
 nav ul .text-nav:hover {
   transform: scale(1.2);
+}
+
+.hamburger {
+  display: none;
+  margin-left: 32px;
+  margin-top: 4px;
+}
+
+@media only screen and (max-width: 641px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav.show ul {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 48px;
+    padding: 8px;
+    text-align: right;
+  }
+
+  nav.show .hamburger .fa-bars::before {
+    content: "\58";
+    margin-left: 3px;
+  }
+
+  /* .lets-connect {
+    position: absolute;
+  } */
 }
 
 .by-tristan-logo {
@@ -206,7 +247,6 @@ a.secondary-button {
 .featured-work .project-thumbnails img {
   border-radius: 8px;
   height: 100%;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .explore-link {
@@ -374,7 +414,6 @@ a.tertiary {
   }
 
   main {
-    /* background-color: red; */
     margin-left: 32px;
     margin-right: 32px;
     margin-top: 16px;
@@ -442,6 +481,8 @@ a.tertiary {
   header {
     display: flex;
     align-items: center;
+    margin-left: 64px;
+    margin-right: 64px;
   }
 
   .hero {

@@ -256,8 +256,6 @@ Super light (Accent grey): #d9d9d9
   }
 
   .dash-intro-text p {
-    margin-left: 64px;
-    margin-right: 64px;
     max-width: 650px;
     margin: 0 auto;
     font-size: 20px;
@@ -305,7 +303,7 @@ Super light (Accent grey): #d9d9d9
 
   .design-process .screens {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
     grid-gap: 32px;
     align-items: start;
     margin-bottom: 32px;

@@ -15,17 +15,28 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/pocket.css">
     <title>PocketChange</title>
+    <script src="https://kit.fontawesome.com/e0d13a7da0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header id="header">
         <span class="by-tristan-logo"><a href="index.html">ByTristan <sup>&#169;</sup></a></span>
-        <nav>
+        <!-- <nav>
             <ul>
                 <li class="text-nav"><a href="index.html#featured-work"><span class="rotate">Work</span></a></li>
                 <li class="text-nav"><a href="index.html#about"><span class="rotate">About</span></a></li>
                 <li><a href="#contact" class="primary-button">Let's connect</a></li>
             </ul>
+        </nav> -->
+        <nav id="main-nav" class="navtoggle">
+            <ul>
+                <li class="text-nav"><a href="index.html#featured-work"><span class="rotate">Work</span></a></li>
+                <li class="text-nav"><a href="index.html#about"><span class="rotate">About</span></a></li>
+            </ul>
+            <span class="lets-connect"><a href="#contact" class="primary-button">Let's connect</a></span>
+            <div class="hamburger">
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+            </div>
         </nav>
     </header>
     <main>
@@ -66,11 +77,10 @@
                 <h5 class="verticle-line">|</h5>
                 <h5>Empowering</h5>
             </section>
-            <h5>
-                <picture>
-                    <source srcset="img/pocket/flannel_1x.jpg" media="(max-width:175px)">
-                    <img src="img/pocket/flannel_2x.jpg" alt="Guy in flannel">
-                </picture>
+            <picture class="flannel">
+                <source srcset="img/pocket/flannel_1x.jpg" media="(max-width:175px)">
+                <img src="img/pocket/flannel_2x.jpg" alt="Guy in flannel">
+            </picture>
         </div>
         <section class="section-overview">
             <h5 class="section-header">Overview</h5>
@@ -312,9 +322,12 @@
             </section>
             <a href="#header" class="tertiary">&#8593;</a>
         </div>
-        <p>© 2024 Tristan Cox </p>
-        <p>All rights reserved.</p>
+        <div class="copyright">
+            <p>© 2024 Tristan Cox </p>
+            <p>All rights reserved.</p>
+        </div>
     </footer>
+    <script src="../js/scripts.js"></script>
 </body>
 
 </html>

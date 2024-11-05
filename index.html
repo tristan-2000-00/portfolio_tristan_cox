@@ -14,24 +14,31 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Tristan Cox Portfolio</title>
+    <script src="https://kit.fontawesome.com/e0d13a7da0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Header -->
     <header id="header">
         <span class="by-tristan-logo">ByTristan <sup>&#169;</sup></span>
-        <nav>
+        <nav id="main-nav" class="navtoggle">
             <ul>
                 <li class="text-nav"><a href="#featured-work"><span class="rotate">Work</span></a></li>
                 <li class="text-nav"><a href="#about"><span class="rotate">About</span></a></li>
-                <li><a href="#contact" class="primary-button">Let's connect</a></li>
             </ul>
+            <span class="lets-connect"><a href="#contact" class="primary-button">Let's connect</a></span>
+            <div class="hamburger">
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+            </div>
         </nav>
     </header>
 
     <!-- Main -->
     <main>
         <section class="hero">
+            <!-- <video class="video-bg" autoplay muted loop>
+                <source src="img/hero-video.mp4" type="video/mp4">
+            </video> -->
             <div class="container">
                 <h2 class="my-name">Tristan Cox</h2>
             </div>

@@ -193,17 +193,14 @@ h5 {
 
   .app-selling-points {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 16px;
   }
 
   .verticle-line {
     color: #d9d9d9;
-  }
-
-  .section-overview {
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
 
   .design-process {
@@ -273,7 +270,8 @@ h5 {
 @media only screen and (min-width: 992px) {
   main {
     max-width: 1440px;
-    margin: 0 auto;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 
   body {
@@ -293,12 +291,14 @@ h5 {
 
   .app-selling-points {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-bottom: 32px;
   }
 
   .verticle-line {
     color: #d9d9d9;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   .section-overview {
