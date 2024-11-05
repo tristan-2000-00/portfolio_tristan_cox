@@ -1,3 +1,5 @@
+console.log("Welcome to my portfolio!")
+
 function menuToggle() {
   var nav = document.getElementById('main-nav');
   if (nav.className === 'navtoggle') {
@@ -5,5 +7,4 @@ function menuToggle() {
   } else {
     nav.className = 'navtoggle';
   }
-  // console.log("Welcome to my portfolio!");
 }
