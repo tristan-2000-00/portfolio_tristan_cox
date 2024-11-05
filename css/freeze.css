@@ -15,6 +15,10 @@ Super light (Accent grey): #d9d9d9
 
 }
 
+h1 {
+    display: none;
+}
+
 .section-freeze-app {
     margin-top: 32px;
     margin-bottom: 64px;

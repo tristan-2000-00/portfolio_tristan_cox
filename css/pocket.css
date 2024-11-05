@@ -30,6 +30,10 @@ h5 {
   border-radius: 10px;
 }
 
+h1 {
+  display: none;
+}
+
 .pocket-change-logo {
   display: flex;
   align-items: center;
