@@ -1,127 +1,202 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
+  <head>
+    <!-- prettier-ignore -->
     <meta charset="UTF-8">
+    <!-- prettier-ignore -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- prettier-ignore -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- prettier-ignore -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- prettier-ignore -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- prettier-ignore -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    >
+    <!-- prettier-ignore -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    >
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" >
     <title>Tristan Cox Portfolio</title>
-    <script src="https://kit.fontawesome.com/e0d13a7da0.js" crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://kit.fontawesome.com/e0d13a7da0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header id="header">
-        <span class="by-tristan-logo">ByTristan <sup>&#169;</sup></span>
-        <nav id="main-nav" class="navtoggle">
-            <ul>
-                <li class="text-nav"><a href="#featured-work"><span class="rotate">Work</span></a></li>
-                <li class="text-nav"><a href="#about"><span class="rotate">About</span></a></li>
-            </ul>
-            <span class="lets-connect"><a href="#contact" class="primary-button">Let's connect</a></span>
-            <div class="hamburger">
-                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
-            </div>
-        </nav>
+      <span class="by-tristan-logo">ByTristan <sup>&#169;</sup></span>
+      <nav id="main-nav" class="navtoggle">
+        <ul>
+          <li class="text-nav">
+            <a href="#featured-work"><span class="rotate">Work</span></a>
+          </li>
+          <li class="text-nav">
+            <a href="#about"><span class="rotate">About</span></a>
+          </li>
+        </ul>
+        <span class="lets-connect"
+          ><a href="#contact" class="primary-button">Let's connect</a></span
+        >
+        <div class="hamburger">
+          <a href="javascript:void(0);" class="icon" onclick="menuToggle()"
+            ><i class="fas fa-bars"></i
+          ></a>
+        </div>
+      </nav>
     </header>
 
     <!-- Main -->
     <main>
-        <section class="hero">
-            <div class="container">
-                <h2 class="my-name">Tristan Cox</h2>
-            </div>
-            <p>Web and mobile app designer with strong UI skills and solid UX thinking. I am
-                passionate about crafting <span class="blue-text">user-centric and visually appealing</span> designs.
+      <section class="hero">
+        <div class="container">
+          <h2 class="my-name">Tristan Cox</h2>
+        </div>
+        <p>
+          Web and mobile app designer with strong UI skills and solid UX
+          thinking. I am passionate about crafting
+          <span class="blue-text">user-centric and visually appealing</span>
+          designs.
+        </p>
+      </section>
+      <section class="featured-work" id="featured-work">
+        <h5 class="section-header">Featured Work</h5>
+        <div class="project-thumbnails">
+          <a href="pocketchange.html">
+            <!-- prettier-ignore -->
+            <picture>
+              <source
+                srcset="img/pocket/thumbnail_1x.png"
+                media="(max-width:175px)"
+              >
+              <!-- prettier-ignore -->
+              <img
+                src="img/pocket/thumbnail_2x.png"
+                alt="PocketChange Thumbnail"
+              >
+            </picture>
+            <span class="explore-link"
+              ><span class="secondary-text">Explore</span> PocketChange</span
+            >
+          </a>
+          <a href="freeze.html">
+            <!-- prettier-ignore -->
+            <picture>
+              <source
+                srcset="img/freeze/thumbnail_1x.png"
+                media="(max-width:175px)"
+              >
+              <!-- prettier-ignore -->
+              <img src="img/freeze/thumbnail_2x.png" alt="Freeze Thumbnail" >
+            </picture>
+            <span class="explore-link"
+              ><span class="secondary-text">Explore</span> Freeze</span
+            >
+          </a>
+          <a href="dashdine.html">
+            <picture>
+              <!-- prettier-ignore -->
+              <source
+                srcset="img/dashdine/thumbnail_1x.png"
+                media="(max-width:175px)"
+              >
+              <!-- prettier-ignore -->
+              <img src="img/dashdine/thumbnail_2x.png" alt="Freeze Thumbnail">
+            </picture>
+            <span class="explore-link"
+              ><span class="secondary-text">Explore</span> Dash & Dine</span
+            >
+          </a>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <h5 class="section-header">About</h5>
+        <div class="about-content">
+          <div>
+            <h3>Designer, Developer, Creator</h3>
+            <p>
+              Hi, I'm Tristan Cox, a UI/UX designer based in Missoula, Montana.
+              I have a passion for visual design and creating meaningful
+              products that bring people together. I'm data and research driven
+              to produce clean and logical interfaces.
             </p>
-        </section>
-        <section class="featured-work" id="featured-work">
-            <h5 class="section-header">Featured Work</h5>
-            <div class="project-thumbnails">
-                <a href="pocketchange.html">
-                    <picture>
-                        <source srcset="img/pocket/thumbnail_1x.png" media="(max-width:175px)">
-                        <img src="img/pocket/thumbnail_2x.png" alt="PocketChange Thumbnail">
-                    </picture>
-                    <span class="explore-link"><span class="secondary-text">Explore</span> PocketChange</span>
-                </a>
-                <a href="freeze.html">
-                    <picture>
-                        <source srcset="img/freeze/thumbnail_1x.png" media="(max-width:175px)">
-                        <img src="img/freeze/thumbnail_2x.png" alt="Freeze Thumbnail">
-                    </picture>
-                    <span class="explore-link"><span class="secondary-text">Explore</span> Freeze</span>
-                </a>
-                </a>
-                <a href="dashdine.html">
-                    <picture>
-                        <source srcset="img/dashdine/thumbnail_1x.png" media="(max-width:175px)">
-                        <img src="img/dashdine/thumbnail_2x.png" alt="Freeze Thumbnail">
-                    </picture>
-                    <span class="explore-link"><span class="secondary-text">Explore</span> Dash & Dine</span>
-                </a>
-                </a>
-            </div>
-        </section>
-        <section id="about" class="about">
-            <h5 class="section-header">About</h5>
-            <div class="about-content">
-                <div>
-                    <h3>Designer, Developer, Creator</h3>
-                    <p>Hi, I'm Tristan Cox, a UI/UX designer based in Missoula, Montana. I have a passion for visual
-                        design and creating meaningful products that bring people together. I'm data and research
-                        driven to produce
-                        clean and logical interfaces.</p>
-                    <p>I furthered my design journey at the University of Vermont, graduating with a degree in
-                        art/design and computer science.</p>
-                    <p>When I'm not sitting in front of my screen, I love exploring nature year round, whether that's
-                        hiking, skiing, or biking. I am always looking for my next adventure.</p>
-                </div>
-                <picture>
-                    <source srcset="img/me_1x.png" media="(max-width:320px)">
-                    <img src="img/me_2x.png" alt="Self Portrait">
-                </picture>
-            </div>
-            <div class="resource-links">
-                <a href="files/Tristan_Cox_Resume.pdf" class="secondary-button" target="_blank">My Resume</a>
-                <a href="https://www.behance.net/tristancox2000" target="_blank"><img src="img/behance.png"
-                        alt="Behance logo"></a>
-                <a href="https://www.linkedin.com/in/tristancox2000/" target="_blank"><img src="img/linkedin.png"
-                        alt="Linked Logo"></a>
-            </div>
-        </section>
-        <section id="contact" class="contact">
-            <h5 class="section-header">Contact</h5>
-            <h3>Have an awesome idea?</h3>
-            <h3>Let's bring it to life.</h3>
-            <p>Tristan2000@gmail.com</p>
-            <p>Thanks for taking the time to explore my work!</p>
-        </section>
+            <p>
+              I furthered my design journey at the University of Vermont,
+              graduating with a degree in art/design and computer science.
+            </p>
+            <p>
+              When I'm not sitting in front of my screen, I love exploring
+              nature year round, whether that's hiking, skiing, or biking. I am
+              always looking for my next adventure.
+            </p>
+          </div>
+          <picture>
+            <!-- prettier-ignore -->
+            <source srcset="img/me_1x.png" media="(max-width:320px)">
+            <!-- prettier-ignore -->
+            <img src="img/me_2x.png" alt="Self Portrait">
+          </picture>
+        </div>
+        <div class="resource-links">
+          <a
+            href="files/Tristan_Cox_Resume.pdf"
+            class="secondary-button"
+            target="_blank"
+            >My Resume</a
+          >
+          <!-- prettier-ignore -->
+          <a href="https://www.behance.net/tristancox2000" target="_blank">
+            <!-- prettier-ignore -->
+            <img src="img/behance.png" alt="Behance logo"
+          
+          ></a>
+          <!-- prettier-ignore -->
+          <a href="https://www.linkedin.com/in/tristancox2000/" target="_blank">
+            <!-- prettier-ignore -->
+            <img src="img/linkedin.png" alt="Linked Logo"
+          
+            ></a
+          >
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <h5 class="section-header">Contact</h5>
+        <h3>Have an awesome idea?</h3>
+        <h3>Let's bring it to life.</h3>
+        <p>Tristan2000@gmail.com</p>
+        <p>Thanks for taking the time to explore my work!</p>
+      </section>
     </main>
     <footer>
-        <div class="footer-section">
-            <section class="footer-links">
-                <a href="Resume.pdf" target="_blank">My Resume</a>
-                <a href="https://www.behance.net/tristancox2000" target="_blank">Behance</a>
-                <a href="https://www.linkedin.com/in/tristancox2000/" target="_blank">LinkedIn</a>
-                <p>Tristan2000@gmail.com</p>
-            </section>
-            <a href="#header" class="tertiary">&#8593;</a>
-        </div>
-        <div class="copyright">
-            <p>© 2024 Tristan Cox </p>
-            <p>All rights reserved.</p>
-        </div>
+      <div class="footer-section">
+        <h2>Footer</h2>
+        <section class="footer-links">
+          <h2>Footer links</h2>
+          <a href="Resume.pdf" target="_blank">My Resume</a>
+          <a href="https://www.behance.net/tristancox2000" target="_blank"
+            >Behance</a
+          >
+          <a href="https://www.linkedin.com/in/tristancox2000/" target="_blank"
+            >LinkedIn</a
+          >
+          <p>Tristan2000@gmail.com</p>
+        </section>
+        <a href="#header" class="tertiary">&#8593;</a>
+      </div>
+      <div class="copyright">
+        <p>© 2024 Tristan Cox</p>
+        <p>All rights reserved.</p>
+      </div>
     </footer>
     <script src="js/scripts.js"></script>
-</body>
-
+  </body>
 </html>

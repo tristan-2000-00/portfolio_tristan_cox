@@ -239,7 +239,7 @@ a.secondary-button {
 
 .featured-work .project-thumbnails {
   display: grid;
-  grid-template-columns: repeat(minmax(200px, 1fr));
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
   grid-gap: 64px;
   align-items: center;
 }
@@ -254,11 +254,11 @@ a.secondary-button {
 }
 
 .explore-link::after {
-  content: ' ';
+  content: " ";
   display: inline-block;
   height: 14px;
   width: 14px;
-  background-image: url('../img/arrow.svg');
+  background-image: url("../img/arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: 4px;
@@ -330,6 +330,10 @@ footer {
   color: var(--light-text-color);
 }
 
+.footer-section h2 {
+  display: none;
+}
+
 footer .footer-section {
   display: flex;
   justify-content: space-between;
@@ -339,8 +343,12 @@ footer .copyright {
   margin-top: 32px;
 }
 
-.footer-links>* {
+.footer-links > * {
   font-size: 16px;
+}
+
+.footer-links h2 {
+  display: none;
 }
 
 footer a {
@@ -420,7 +428,6 @@ a.tertiary {
   }
 
   .featured-work .project-thumbnails {
-    grid-template-columns: repeat(minmax(430px, 1fr));
     max-width: calc(500px * 1);
     margin: 0 auto;
   }
@@ -436,7 +443,7 @@ a.tertiary {
   .about-content {
     display: flex;
     align-items: center;
-    gap: 5%;
+    grid-gap: 5%;
   }
 
   .about h3 {
@@ -487,7 +494,6 @@ a.tertiary {
 
   .hero {
     margin-top: 128px;
-    /* background-image: url("https://i.gifer.com/IxSX.gif"); */
   }
 
   .container {
@@ -497,12 +503,10 @@ a.tertiary {
   .hero .my-name {
     font-size: 128px;
     border-right: 5px solid;
-    /* border-color: blue; */
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 2s, cursor 0.9s step-end infinite;
-    /* steps(11) this is the char count for h2 but animation wont follow it */
   }
 
   @keyframes cursor {
@@ -560,7 +564,7 @@ a.tertiary {
   .about-content {
     display: flex;
     align-items: center;
-    gap: 5%;
+    grid-gap: 5%;
   }
 
   .about h3 {

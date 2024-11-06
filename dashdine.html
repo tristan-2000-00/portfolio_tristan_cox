@@ -1,216 +1,374 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    >
+    <link rel="stylesheet" type="text/css" href="css/styles.css" >
+    <link rel="stylesheet" type="text/css" href="css/dashdine.css" >
+    <title>Dash & Dine</title>
+    <script
+      src="https://kit.fontawesome.com/e0d13a7da0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/dashdine.css">
-  <title>Dash & Dine</title>
-  <script src="https://kit.fontawesome.com/e0d13a7da0.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <header id="header">
+      <span class="by-tristan-logo"
+        ><a href="index.html">ByTristan <sup>&#169;</sup></a></span
+      >
+      <nav id="main-nav" class="navtoggle">
+        <ul>
+          <li class="text-nav">
+            <a href="index.html#featured-work"
+              ><span class="rotate">Work</span></a
+            >
+          </li>
+          <li class="text-nav">
+            <a href="index.html#about"><span class="rotate">About</span></a>
+          </li>
+        </ul>
+        <span class="lets-connect"
+          ><a href="#contact" class="primary-button">Let's connect</a></span
+        >
+        <div class="hamburger">
+          <a href="javascript:void(0);" class="icon" onclick="menuToggle()"
+            ><i class="fas fa-bars"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header id="header">
-    <span class="by-tristan-logo"><a href="index.html">ByTristan <sup>&#169;</sup></a></span>
-    <nav id="main-nav" class="navtoggle">
-      <ul>
-        <li class="text-nav"><a href="index.html#featured-work"><span class="rotate">Work</span></a></li>
-        <li class="text-nav"><a href="index.html#about"><span class="rotate">About</span></a></li>
-      </ul>
-      <span class="lets-connect"><a href="#contact" class="primary-button">Let's connect</a></span>
-      <div class="hamburger">
-        <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Dash & Dine</h1>
-    <section class="dash-intro-section">
-      <div class="dash-logo">
-        <img src="img/dashdine/logo.svg" alt="Dash&Dine Logo">
-        <div>Dash & Dine</div>
-      </div>
-    </section>
-    <section class="dash-intro-text">
-      <p>Take your cooking to the next level with our all-in-one responsive recipe web app with a vast collection of
-        recipes ranging from quick and easy weeknight dinners to gourmet dishes!</p>
-      <picture class="collage">
-        <source srcset="img/dashdine/group_imgs_1x.png" media="(max-width:175px)">
-        <img src="img/dashdine/group_imgs_2x.png" alt="Group of Images">
-      </picture>
-    </section>
-    <section class="project-goal">
-      <h2 class="primary-dash-header">Project Goal</h2>
-      <p>To create a web app with a large variety of recipes that can be found with ease and precision, that will result
-        in an overall less frustrating and more enjoyable experience.</p>
-      <p>This web app will allow users to find search and filter recipes, post their own recipes, and interact with
-        other
-        users.</p>
-      <picture>
-        <source srcset="img/dashdine/thumbnail_1x.png" media="(max-width:175px)">
-        <img src="img/dashdine/thumbnail_2x.png" alt="Group of Images">
-      </picture>
-    </section>
-    <section class="user-personas">
-      <h2 class="primary-dash-header">User Personas</h2>
-      <p>After extensive market research and valuable user insight, I created user personas to help create an in-depth
-        analysis of potential users.</p>
-      <picture>
-        <source srcset="img/dashdine/dave_1x.png" media="(max-width:175px)">
-        <img src="img/dashdine/dave_2x.png" alt="Dave User Persona">
-      </picture>
-      <picture>
-        <source srcset="img/dashdine/mae_1x.png" media="(max-width:175px)">
-        <img src="img/dashdine/mae_2x.png" alt="Mae User Persona">
-      </picture>
-      <div class="four-screens">
-        <picture>
-          <source srcset="img/dashdine/four_size_screens_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/four_size_screens_2x.png" alt="Group of Images">
-        </picture>
-      </div>
-    </section>
-    <section class="mvp-doc">
-      <h2 class="primary-dash-header">MVP Document</h2>
-      <p>To define the requirements of my web app, I created an MVP which were supported by user stories.</p>
-      <h5>Requirements</h5>
-      <ul>
-        <li>Allow users to create an account</li>
-        <li>Allow users to search for recipes and filter the results</li>
-        <li>Allow users to save recipes in one place</li>
-        <li>Allow users to interact with other users </li>
-      </ul>
-    </section>
-    <section class="user-flow">
-      <h2 class="primary-dash-header">User Flow</h2>
-      <picture>
-        <source srcset="img/dashdine/user_flow_1x.png" media="(max-width:175px)">
-        <img src="img/dashdine/user_flow_2x.png" alt="User Flow">
-      </picture>
-    </section>
-    <section class="design-process">
-      <h2 class="primary-dash-header">Design Process</h2>
-      <div class="screens">
-        <picture>
-          <source srcset="img/dashdine/low_create_account_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/low_create_account_2x.png" alt="Low Fidelity Create Account Screen">
-        </picture>
-        <picture>
-          <source srcset="img/dashdine/low_home_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/low_home_2x.png" alt="Low Fidelity Home Screen">
-        </picture>
-        <picture>
-          <source srcset="img/dashdine/low_results_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/low_results_2x.png" alt="Low Fidelity Results Screen">
-        </picture>
-        <picture>
-          <source srcset="img/dashdine/low_recipe_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/low_recipe_2x.png" alt="Low Fidelity Recipe Screen">
-        </picture>
-      </div>
-      <div class="screens">
-        <picture>
-          <source srcset="img/dashdine/mid_create_account_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/mid_create_account_2x.png" alt="Mid Fidelity Create Account Screen">
-        </picture>
-        <picture>
-          <source srcset="img/dashdine/mid_home_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/mid_home_2x.png" alt="Mid Fidelity Home Screen">
-        </picture>
-        <picture>
-          <source srcset="img/dashdine/mid_results_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/mid_results_2x.png" alt="Mid Fidelity Results Screen">
-        </picture>
-        <picture>
-          <source srcset="img/dashdine/mid_recipe_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/mid_recipe_2x.png" alt="Mid Fidelity Recipe Screen">
-        </picture>
-      </div>
-      <div class="screens">
-        <picture>
-          <source srcset="img/dashdine/high_create_account_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/high_create_account_2x.png" alt="High Fidelity Create Account Screen">
-        </picture>
-        <picture>
-          <source srcset="img/dashdine/high_home_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/high_home_2x.png" alt="High Fidelity Home Screen">
-        </picture>
-        <picture>
-          <source srcset="img/dashdine/high_results_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/high_results_2x.png" alt="High Fidelity Results Screen">
-        </picture>
-        <picture>
-          <source srcset="img/dashdine/high_recipe_1x.png" media="(max-width:175px)">
-          <img src="img/dashdine/high_recipe_2x.png" alt="High Fidelity Recipe Screen">
-        </picture>
-      </div>
-    </section>
-    <section class="prototype-testing">
-      <h2 class="primary-dash-header">User Prototype Testing</h2>
-      <p>To further polish my designs, I created a few quick rapid prototype tests for potential users.</p>
-      <h5>Initial Problems</h5>
-      <p>User 1 had trouble navigating the mobile screens for the web app</p>
-      <p>User 2 had trouble using filtering system</p>
-      <p>User 4 had trouble navigating backwards through the web app</p>
-      <div class="key-insights">
-        <h5>Key Insights</h5>
-        <p>The web app will need to add a bottom navigation bar to the mobile and tablet breakpoints</p>
-        <p>The web app should have a simpler filtering system </p>
-        <p>The web app should implement more back arrow sand easily identifiable navigational icons</p>
-      </div>
-      <picture class="chef">
-        <source srcset="img/dashdine/chef_mockup_1x.png" media="(max-width:175px)">
-        <img src="img/dashdine/chef_mockup_2x.png" alt="High Fidelity Recipe Screen">
-      </picture>
-    </section>
-    <section class="style-guide">
-      <h2 class="primary-dash-header">Style Guide</h2>
-      <picture>
-        <source srcset="img/dashdine/colors_1x.png" media="(max-width:175px)">
-        <img src="img/dashdine/colors_2x.png" alt="High Fidelity Recipe Screen">
-      </picture>
-      <div>
-        <img src="img/dashdine/typography.svg" alt="Typography">
-      </div>
-    </section>
-    <section class="last-imgs">
-      <picture>
-        <source srcset="img/dashdine/cutting_board_1x.png" media="(max-width:175px)">
-        <img src="img/dashdine/cutting_board_2x.png" alt="High Fidelity Recipe Screen">
-      </picture>
-      <picture>
-        <source srcset="img/dashdine/search_macbook_1x.png" media="(max-width:175px)">
-        <img src="img/dashdine/search_macbook_2x.png" alt="High Fidelity Recipe Screen">
-      </picture>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-section">
-      <section class="footer-links">
-        <a href="Resume.pdf" target="_blank">My Resume</a>
-        <a href="https://www.behance.net/tristancox2000" target="_blank">Behance</a>
-        <a href="https://www.linkedin.com/in/tristancox2000/" target="_blank">LinkedIn</a>
-        <p>Tristan2000@gmail.com</p>
+    <main>
+      <h1>Dash & Dine</h1>
+      <section class="dash-intro-section">
+        <h2>Intro Section</h2>
+        <div class="dash-logo">
+          <img src="img/dashdine/logo.svg" alt="Dash&Dine Logo">
+          <div>Dash & Dine</div>
+        </div>
       </section>
-      <a href="#header" class="tertiary">&#8593;</a>
-    </div>
-    <div class="copyright">
-      <p>© 2024 Tristan Cox </p>
-      <p>All rights reserved.</p>
-    </div>
-  </footer>
-  <script src="js/scripts.js"></script>
-</body>
+      <section class="dash-intro-text">
+        <h2>Intro Text</h2>
+        <p>
+          Take your cooking to the next level with our all-in-one responsive
+          recipe web app with a vast collection of recipes ranging from quick
+          and easy weeknight dinners to gourmet dishes!
+        </p>
+        <picture class="collage">
+          <source
+            srcset="img/dashdine/group_imgs_1x.png"
+            media="(max-width:175px)"
+          >
+          <img src="img/dashdine/group_imgs_2x.png" alt="Group of Images">
+        </picture>
+      </section>
+      <section class="project-goal">
+        <h2 class="primary-dash-header">Project Goal</h2>
+        <p>
+          To create a web app with a large variety of recipes that can be found
+          with ease and precision, that will result in an overall less
+          frustrating and more enjoyable experience.
+        </p>
+        <p>
+          This web app will allow users to find search and filter recipes, post
+          their own recipes, and interact with other users.
+        </p>
+        <picture>
+          <source
+            srcset="img/dashdine/thumbnail_1x.png"
+            media="(max-width:175px)"
+          >
+          <img src="img/dashdine/thumbnail_2x.png" alt="Group of Images">
+        </picture>
+      </section>
+      <section class="user-personas">
+        <h2 class="primary-dash-header">User Personas</h2>
+        <p>
+          After extensive market research and valuable user insight, I created
+          user personas to help create an in-depth analysis of potential users.
+        </p>
+        <picture>
+          <source srcset="img/dashdine/dave_1x.png" media="(max-width:175px)">
+          <img src="img/dashdine/dave_2x.png" alt="Dave User Persona">
+        </picture>
+        <picture>
+          <source srcset="img/dashdine/mae_1x.png" media="(max-width:175px)">
+          <img src="img/dashdine/mae_2x.png" alt="Mae User Persona">
+        </picture>
+        <div class="four-screens">
+          <picture>
+            <source
+              srcset="img/dashdine/four_size_screens_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/four_size_screens_2x.png"
+              alt="Group of Images"
+            >
+          </picture>
+        </div>
+      </section>
+      <section class="mvp-doc">
+        <h2 class="primary-dash-header">MVP Document</h2>
+        <p>
+          To define the requirements of my web app, I created an MVP which were
+          supported by user stories.
+        </p>
+        <h5>Requirements</h5>
+        <ul>
+          <li>Allow users to create an account</li>
+          <li>Allow users to search for recipes and filter the results</li>
+          <li>Allow users to save recipes in one place</li>
+          <li>Allow users to interact with other users</li>
+        </ul>
+      </section>
+      <section class="user-flow">
+        <h2 class="primary-dash-header">User Flow</h2>
+        <picture>
+          <source
+            srcset="img/dashdine/user_flow_1x.png"
+            media="(max-width:175px)"
+          >
+          <img src="img/dashdine/user_flow_2x.png" alt="User Flow" >
+        </picture>
+      </section>
+      <section class="design-process">
+        <h2 class="primary-dash-header">Design Process</h2>
+        <div class="screens">
+          <picture>
+            <source
+              srcset="img/dashdine/low_create_account_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/low_create_account_2x.png"
+              alt="Low Fidelity Create Account Screen"
+            >
+          </picture>
+          <picture>
+            <source
+              srcset="img/dashdine/low_home_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/low_home_2x.png"
+              alt="Low Fidelity Home Screen"
+            >
+          </picture>
+          <picture>
+            <source
+              srcset="img/dashdine/low_results_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/low_results_2x.png"
+              alt="Low Fidelity Results Screen"
+            >
+          </picture>
+          <picture>
+            <source
+              srcset="img/dashdine/low_recipe_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/low_recipe_2x.png"
+              alt="Low Fidelity Recipe Screen"
+            >
+          </picture>
+        </div>
+        <div class="screens">
+          <picture>
+            <source
+              srcset="img/dashdine/mid_create_account_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/mid_create_account_2x.png"
+              alt="Mid Fidelity Create Account Screen"
+            >
+          </picture>
+          <picture>
+            <source
+              srcset="img/dashdine/mid_home_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/mid_home_2x.png"
+              alt="Mid Fidelity Home Screen"
+            >
+          </picture>
+          <picture>
+            <source
+              srcset="img/dashdine/mid_results_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/mid_results_2x.png"
+              alt="Mid Fidelity Results Screen"
+            >
+          </picture>
+          <picture>
+            <source
+              srcset="img/dashdine/mid_recipe_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/mid_recipe_2x.png"
+              alt="Mid Fidelity Recipe Screen"
+            >
+          </picture>
+        </div>
+        <div class="screens">
+          <picture>
+            <source
+              srcset="img/dashdine/high_create_account_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/high_create_account_2x.png"
+              alt="High Fidelity Create Account Screen"
+            >
+          </picture>
+          <picture>
+            <source
+              srcset="img/dashdine/high_home_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/high_home_2x.png"
+              alt="High Fidelity Home Screen"
+            >
+          </picture>
+          <picture>
+            <source
+              srcset="img/dashdine/high_results_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/high_results_2x.png"
+              alt="High Fidelity Results Screen"
+            >
+          </picture>
+          <picture>
+            <source
+              srcset="img/dashdine/high_recipe_1x.png"
+              media="(max-width:175px)"
+            >
+            <img
+              src="img/dashdine/high_recipe_2x.png"
+              alt="High Fidelity Recipe Screen"
+            >
+          </picture>
+        </div>
+      </section>
+      <section class="prototype-testing">
+        <h2 class="primary-dash-header">User Prototype Testing</h2>
+        <p>
+          To further polish my designs, I created a few quick rapid prototype
+          tests for potential users.
+        </p>
+        <h5>Initial Problems</h5>
+        <p>User 1 had trouble navigating the mobile screens for the web app</p>
+        <p>User 2 had trouble using filtering system</p>
+        <p>User 4 had trouble navigating backwards through the web app</p>
+        <div class="key-insights">
+          <h5>Key Insights</h5>
+          <p>
+            The web app will need to add a bottom navigation bar to the mobile
+            and tablet breakpoints
+          </p>
+          <p>The web app should have a simpler filtering system</p>
+          <p>
+            The web app should implement more back arrow sand easily
+            identifiable navigational icons
+          </p>
+        </div>
+        <picture class="chef">
+          <source
+            srcset="img/dashdine/chef_mockup_1x.png"
+            media="(max-width:175px)"
+          >
+          <img
+            src="img/dashdine/chef_mockup_2x.png"
+            alt="High Fidelity Recipe Screen"
+          >
+        </picture>
+      </section>
+      <section class="style-guide">
+        <h2 class="primary-dash-header">Style Guide</h2>
+        <picture>
+          <source
+            srcset="img/dashdine/colors_1x.png"
+            media="(max-width:175px)"
+          >
+          <img
+            src="img/dashdine/colors_2x.png"
+            alt="High Fidelity Recipe Screen"
+          >
+        </picture>
+        <div>
+          <img src="img/dashdine/typography.svg" alt="Typography">
+        </div>
+      </section>
+      <section class="last-imgs">
+        <h2>Final Images</h2>
+        <picture>
+          <source
+            srcset="img/dashdine/cutting_board_1x.png"
+            media="(max-width:175px)"
+          >
+          <img
+            src="img/dashdine/cutting_board_2x.png"
+            alt="High Fidelity Recipe Screen"
+          >
+        </picture>
+        <picture>
+          <source
+            srcset="img/dashdine/search_macbook_1x.png"
+            media="(max-width:175px)"
+          >
+          <img
+            src="img/dashdine/search_macbook_2x.png"
+            alt="High Fidelity Recipe Screen"
+          >
+        </picture>
+      </section>
+    </main>
 
+    <footer>
+      <div class="footer-section">
+        <h2>Footer</h2>
+        <section class="footer-links">
+          <h2>Footer links</h2>
+          <a href="Resume.pdf" target="_blank">My Resume</a>
+          <a href="https://www.behance.net/tristancox2000" target="_blank"
+            >Behance</a
+          >
+          <a href="https://www.linkedin.com/in/tristancox2000/" target="_blank"
+            >LinkedIn</a
+          >
+          <p>Tristan2000@gmail.com</p>
+        </section>
+        <a href="#header" class="tertiary">&#8593;</a>
+      </div>
+      <div class="copyright">
+        <p>© 2024 Tristan Cox</p>
+        <p>All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
