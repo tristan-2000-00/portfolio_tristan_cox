@@ -1,18 +1,9 @@
-/*
-Colors used:
-Primary Color (Black): #0a0a0a;
-Secondary Color (Blue): #2033b0;
-Tertiary Color (PocketChange Blue): #0074E8
-Super light (Accent grey): #d9d9d9
-*/
-
 :root {
   --margin-size: 24px;
   --dash-text-color: #0a0a0a;
   --dash-white: #fff;
   --dash-light-grey: #757575;
   --dash-accent-grey: #d9d9d9;
-
 }
 
 .dash-intro-section {
@@ -136,7 +127,6 @@ h1 {
 .prototype-testing p {
   margin-top: 16px;
   margin-bottom: 32px;
-
 }
 
 .prototype-testing {
@@ -217,7 +207,6 @@ h1 {
     margin-left: 32px;
     margin-right: 32px;
     max-width: 650px;
-    margin: 0 auto;
     font-size: 20px;
     font-weight: 400;
   }
@@ -227,7 +216,6 @@ h1 {
     margin-bottom: 64px;
   }
 }
-
 
 @media only screen and (min-width: 992px) {
   body {
